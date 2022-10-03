@@ -1,0 +1,17 @@
+<po-page-default p-title="PO UI">
+  <p>Reproduza aqui sua issue.</p>
+  <form [formGroup]="formFilter">
+    <div class="po-row po-pt-2 po-pb-2">
+      <po-select
+        class="po-md-6 po-pl-0"
+        p-label="Classificar por:"
+        [p-options]="[
+          { label: 'Relevância', value: 'rel' },
+          { label: 'Mais recentes', value: 'rec' }
+        ]"
+        formControlName="relevance"
+      ></po-select>
+      
+    </div>
+  </form>
+</po-page-default>
